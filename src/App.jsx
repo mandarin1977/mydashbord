@@ -1,4 +1,4 @@
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter, HashRouter as Router } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import RouterConfig from './router/Router';
@@ -7,7 +7,7 @@ import './layout.scss';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Sidebar />
       <div className="main-content">
         <Header />
@@ -15,7 +15,7 @@ function App() {
           <RouterConfig />
         </main>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
