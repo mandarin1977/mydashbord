@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import RouterConfig from './router/Router';
@@ -7,7 +7,7 @@ import './layout.scss';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Sidebar />
       <div className="main-content">
         <Header />
@@ -15,7 +15,7 @@ function App() {
           <RouterConfig />
         </main>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
