@@ -4,7 +4,12 @@ function Dashboard() {
     return (
         <>
             <section>
-                <h3>Overview</h3>
+                <article>
+                    <aside>
+                        <h2>공지사항</h2>
+                        <p>여기다가 공지사항 내용 나옴</p>
+                    </aside>
+                </article>
                 <div>
                     sdfsdf
                 </div>
